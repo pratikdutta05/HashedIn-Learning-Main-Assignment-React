@@ -14,7 +14,7 @@
 }
 
 .header_container nav li {
-  display: table;
+  display: flex;
   height: 100%;
   float: left;
   margin-right: 30px;
@@ -27,4 +27,124 @@
 
 .header-option {
   margin: 10px;
+}
+
+/* Footer Component CSS */
+
+.hashFooter {
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+/* applicationHeading Css */
+
+.applicationHeading {
+  height: 70px;
+  margin: 16px 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headingData {
+  width: 250px;
+  font: normal normal 600 20px/24px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.applicationHeading img {
+  height: 65px;
+}
+
+/* Course List Page */
+
+.courseList {
+  width: 900px;
+  height: 600px;
+  margin-left: 100px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font: normal normal 600 16px/20px Montserrat;
+  letter-spacing: 0px;
+  color: #0f1317;
+  opacity: 1;
+}
+
+.lineItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.outerBox {
+  width: 900px;
+  height: 60px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f4f4f4;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.courseBox {
+  margin: 10px;
+  height: 35px;
+  width: 45px;
+  background: #f2f2f2 0% 0% no-repeat padding-box;
+}
+
+.courseName {
+  margin: 10px;
+  height: 35px;
+  width: 250px;
+}
+
+.authorName {
+  margin: 10px;
+  height: 35px;
+  width: 100px;
+}
+
+.coursePrice {
+  margin: 10px;
+  height: 35px;
+  width: 100px;
+  font: normal normal bold 20px/24px Montserrat;
+}
+
+.addtoCart {
+  margin: 10px;
+  height: 35px;
+  width: 140px;
+  background: #ff6738 0% 0% no-repeat padding-box;
+  font: normal normal 600 16px/19px Montserrat;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+}
+
+.arrow {
+  margin: 20px;
+  height: 35px;
+}
+
+.star {
+  margin: 10px;
+  height: 35px;
+}
+
+.star img {
+  height: 30px;
 }
