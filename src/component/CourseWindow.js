@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Course from "./Course";
 import { useDispatch, useSelector } from "react-redux";
 import { setMovieData } from "../actions/index";
+import MyCart from "./MyCart";
+import SearchBar from "./Search";
 
 const CourseWindow = () => {
   const [courses, setCourses] = useState([]);
@@ -37,19 +39,32 @@ const CourseWindow = () => {
   console.log(courseList);
 
   return (
-    <div className="courseList">
-      <div className="category">
-        <div>All Courses</div>
-        <div className="sortPrice">
-          <select name="price">
-            <option value="price">Course Price</option>
-          </select>
+    <div className="courseSearch">
+      <div className="courseList">
+        <div className="category">
+          <div>All Courses</div>
+
+          <div className="sortPrice">
+            <select name="price">
+              <option value="price">Course Price</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="lineItem">
+          {courses.map((course) => {
+            return <Course course={course} />;
+          })}
         </div>
       </div>
-      <div className="lineItem">
-        {courses.map((course) => {
-          return <Course course={course} />;
-        })}
+
+      <div className="searchCourse">
+        <div className="searchBut">
+          <SearchBar />
+        </div>
+        <div className="cartdetails">
+          <MyCart></MyCart>
+        </div>
       </div>
     </div>
   );
