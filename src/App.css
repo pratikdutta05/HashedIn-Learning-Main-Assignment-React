@@ -13,7 +13,11 @@
   margin: 5px;
 }
 
-.header_container nav li {
+.logo {
+  cursor: pointer;
+}
+
+.header_container div li {
   display: flex;
   height: 100%;
   float: left;
@@ -27,6 +31,10 @@
 
 .header-option {
   margin: 10px;
+}
+
+.headerFont {
+  text-decoration: none;
 }
 
 /* Footer Component CSS */
@@ -138,6 +146,7 @@
 .arrow {
   margin: 20px;
   height: 35px;
+  cursor: pointer;
 }
 
 .star {
@@ -208,16 +217,6 @@
 }
 
 .cartadd {
-  /* width: 350px;
-  height: 60px;
-  margin-top: 10px;
-  margin-left: 10px;
-  display: flex;
-  justify-content: space-around;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border: 1px solid #f4f4f4;
-  border-radius: 0px 0px 4px 4px; */
   text-align: left;
   font: italic normal medium 16px/19px Montserrat;
   letter-spacing: 0px;
@@ -311,4 +310,133 @@
 
 .totalValue {
   font: normal normal bold 28px/34px Montserrat;
+}
+
+.lineItemCart {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 1px #00000029;
+}
+
+.nameBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartItemTitle {
+  width: 300px;
+  margin: 2px;
+  font: normal normal medium 8px/10px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+}
+
+.lineItemPrice {
+  margin-left: 250px;
+  font: normal normal bold 16px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+}
+
+/* Error Screen */
+
+#main {
+  font-family: "Lato", sans-serif;
+  color: #888;
+  margin: 0;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1 {
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type 0.5s alternate infinite;
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px #888;
+  }
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
+  }
+}
+
+.addToCartSh {
+  width: 900px;
+  height: 40px;
+  margin-left: 100px;
+  font: normal normal 600 18px/20px Montserrat;
+}
+
+.myCartLineItem {
+  width: 900px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 90px;
+  display: flex;
+  justify-content: space-around;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #f4f4f4;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.myCartName {
+  margin-top: 10px;
+  height: 35px;
+  width: 250px;
+}
+
+.myCartPrice {
+  margin-top: 10px;
+  font: normal normal bold 18px/20px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+}
+
+.deleteLogo img {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.moveWish {
+  margin-top: 10px;
+  font: normal normal medium 16px/19px Montserrat;
+  letter-spacing: 0px;
+  color: #1873ce;
+  text-align: left;
+}
+
+.addcartTitle {
+  font: normal normal 600 16px/20px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+}
+
+.listCartItem {
+  /* border: 1px solid black; */
+  width: 900px;
+  height: 500px;
+  /* margin-left: 100px; */
+}
+
+.totalAmount {
+  border: 1px solid black;
+  width: 100px;
+  height: 150px;
+}
+
+.cartAmount {
+  display: flux;
+  justify-content: space-between;
 }
