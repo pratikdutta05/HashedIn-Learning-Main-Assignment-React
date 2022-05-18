@@ -3,6 +3,7 @@ import ApplicationHeading from "./ApplicationHeading";
 import { useSelector } from "react-redux";
 import Course from "./Course";
 import MyCartLineItem from "./MyCartLineItem";
+import swal from "sweetalert";
 
 const AddToCartScreen = () => {
   const { courses, cart } = useSelector((state) => state.main);
@@ -35,7 +36,14 @@ const AddToCartScreen = () => {
           <div className="totalPrice">Rs. {total}/-</div>
           <div className="totalDiscount">You have saved Rs 0/-</div>
           <div>
-            <button className="totalCheckout">CHECKOUT</button>
+            <button
+              className="totalCheckout"
+              onClick={() => {
+                swal("", "Payment Gateway unavailable!", "error");
+              }}
+            >
+              CHECKOUT
+            </button>
           </div>
         </div>
       </div>
