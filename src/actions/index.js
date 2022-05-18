@@ -39,3 +39,25 @@ export const addToCart = (data) => {
     data: data,
   };
 };
+
+const profileURl =
+  "https://627ca708bf2deb7174de4ade.mockapi.io/course/v1/profile/";
+
+export const addAllProfile = () => {
+  return function (dispatch) {
+    fetch(profileURl)
+      .then((response) => response.json())
+      .then((data) =>
+        dispatch({
+          type: "SET_PROFILE_DATA",
+          data: data,
+        })
+      )
+      .catch((error) =>
+        dispatch({
+          type: "FETCH_FAILED",
+          data: error,
+        })
+      );
+  };
+};

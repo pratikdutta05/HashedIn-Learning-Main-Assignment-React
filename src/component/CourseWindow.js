@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Course from "./Course";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,6 +15,18 @@ const CourseWindow = () => {
 
   const { courses } = useSelector((state) => state.main);
 
+  const _courses = [...courses];
+
+  const sortCourse = (value) => {
+    if (value === "low") {
+      _courses.sort((a, b) => a.actual_price - b.actual_price);
+    } else if (value === "high") {
+      _courses.sort((a, b) => b.actual_price - a.actual_price);
+    }
+
+    // setCars(_cars);
+  };
+
   return (
     <div>
       <div>
@@ -27,14 +38,16 @@ const CourseWindow = () => {
             <div>All Courses</div>
 
             <div className="sortPrice">
-              <select name="price">
-                <option value="price">Course Price</option>
+              <select name="price" onChange={(e) => sortCourse(e.target.value)}>
+                <option value="none">Course Price</option>
+                <option value="low">Low to High</option>
+                <option value="high">High to Low</option>
               </select>
             </div>
           </div>
 
           <div className="lineItem">
-            {courses.slice(0, 8).map((course) => {
+            {_courses.slice(0, 8).map((course) => {
               return <Course course={course} key={course.id} />;
             })}
           </div>

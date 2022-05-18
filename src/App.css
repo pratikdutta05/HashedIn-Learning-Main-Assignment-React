@@ -267,7 +267,7 @@
 
 .buttonIcon {
   border: none;
-  background: orange;
+  background: #ff6738;
   margin-top: 5px;
   object-fit: fill;
 }
@@ -379,10 +379,9 @@
 }
 
 .myCartLineItem {
-  width: 900px;
+  width: 950px;
   height: 70px;
   margin-top: 5px;
-  margin-left: 90px;
   display: flex;
   justify-content: space-around;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -424,19 +423,147 @@
 }
 
 .listCartItem {
-  /* border: 1px solid black; */
-  width: 900px;
+  width: 1000px;
   height: 500px;
-  /* margin-left: 100px; */
+  margin-left: 100px;
 }
 
 .totalAmount {
-  border: 1px solid black;
-  width: 100px;
-  height: 150px;
+  width: 300px;
+  height: 180px;
+  margin-right: 100px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border: 1px solid #e0e0e0;
 }
 
 .cartAmount {
-  display: flux;
+  display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  height: 400px;
+}
+
+/* CSS for CArt Div */
+
+.totalCartAmount {
+  margin: 10px;
+  font: normal normal medium 18px/22px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+}
+
+.totalPrice {
+  margin: 10px;
+  font: normal normal 600 30px/37px Montserrat;
+  letter-spacing: 0px;
+  color: #080808;
+}
+
+.totalDiscount {
+  margin: 10px;
+  font-size: 14px;
+  color: #629a33;
+}
+
+.totalCheckout {
+  margin: 10px;
+  width: 280px;
+  height: 40px;
+  background-color: #ff6738;
+  color: white;
+  border: none;
+}
+
+.recomCourse {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e0e0e0;
+  margin-left: 100px;
+  height: 200px;
+  width: 1000px;
+}
+
+.recomandedHeader {
+  margin: 10px;
+  font: normal normal 600 18px/22px Montserrat;
+  letter-spacing: 0px;
+  color: #4e4e4e;
+}
+
+.recomndedlineItem {
+  margin-left: 10px;
+}
+
+/* Profile Data Page */
+
+.userProfile {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.profilePhoto {
+  /* border: 1px solid black; */
+  height: 200px;
+  width: 200px;
+  margin-left: 100px;
+}
+
+.profilePhoto img {
+  height: 200px;
+  width: 250px;
+}
+
+.profileInfo {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  height: 600px;
+  width: 1000px;
+  margin-right: 100px;
+}
+
+.userNameDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  column-gap: 0;
+}
+
+.userNameInput {
+  background: #f7f8ff 0% 0% no-repeat padding-box;
+  border: none;
+  font: normal normal medium 14px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #848484;
+  width: 200px;
+  height: 20px;
+}
+
+.userNameTag {
+  font: normal normal medium 12px/15px Montserrat;
+  letter-spacing: 0px;
+  color: #454545;
+}
+
+.userAbout {
+  background: #f7f8ff 0% 0% no-repeat padding-box;
+  border: none;
+  font: normal normal medium 14px/18px Montserrat;
+  letter-spacing: 0px;
+  color: #848484;
+  width: 700px;
+  height: 100px;
+  word-wrap: break-word;
+}
+
+.saveButton {
+  width: 145px;
+  height: 40px;
+  /* UI Properties */
+  background: #ff6738 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  margin-top: 60px;
+  margin-left: 800px;
 }

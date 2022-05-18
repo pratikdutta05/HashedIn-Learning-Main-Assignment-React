@@ -30,7 +30,7 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink className="cartLogo" to="/home">
+            <NavLink className="cartLogo" to="/myProfile">
               <img src={userlogo} alt="Google logo" />
             </NavLink>
           </li>

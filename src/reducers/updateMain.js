@@ -1,6 +1,7 @@
 const initState = {
   courses: [],
   cart: [],
+  profile: [],
   errors: "",
 };
 
@@ -8,6 +9,10 @@ const cartReducer = (state = initState, action) => {
   switch (action.type) {
     case "SET_COURSE_DATA":
       state = Object.assign({}, state, { courses: [...action.data] });
+      return state;
+
+    case "SET_PROFILE_DATA":
+      state = Object.assign({}, state, { profile: [...action.data] });
       return state;
 
     case "ADD_TO_CART":
